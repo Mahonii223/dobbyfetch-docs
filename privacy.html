@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="DobbyFetch Internal Data Processing &amp; Privacy Policy for third-party API verification.">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Privacy Policy &mdash; DobbyFetch Internal BI &amp; DWH Platform</title>
+  <style>
+    :root {
+      --bg: #f8fafc;
+      --surface: #ffffff;
+      --surface-alt: #f1f5f9;
+      --text: #0f172a;
+      --text-muted: #475569;
+      --border: #e2e8f0;
+      --primary: #1d4ed8;
+      --primary-soft: #eff6ff;
+      --primary-border: #bfdbfe;
+      --emerald: #047857;
+      --emerald-soft: #ecfdf5;
+      --emerald-border: #a7f3d0;
+      --amber: #b45309;
+      --amber-soft: #fffbeb;
+      --amber-border: #fde68a;
+      --shadow: 0 1px 3px rgba(15, 23, 42, 0.06), 0 1px 2px rgba(15, 23, 42, 0.04);
+      --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: var(--font-sans);
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+      font-size: 15px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    code {
+      font-family: var(--font-mono);
+      font-size: 0.875em;
+      background-color: var(--surface-alt);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 0.12em 0.4em;
+    }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(255, 255, 255, 0.94);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav-inner {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 0.85rem 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+      font-weight: 700;
+      font-size: 1.05rem;
+      color: var(--text);
+    }
+
+    .brand:hover {
+      text-decoration: none;
+    }
+
+    .brand-mark {
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      background: linear-gradient(135deg, #1d4ed8, #0f172a);
+      color: #ffffff;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 0.9rem;
+    }
+
+    .back-link {
+      font-size: 0.9rem;
+      font-weight: 600;
+      padding: 0.35rem 0.75rem;
+      border-radius: 6px;
+      background: var(--primary-soft);
+      border: 1px solid var(--primary-border);
+      color: var(--primary);
+    }
+
+    .container {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 2.25rem 1.5rem 4rem;
+    }
+
+    .policy-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 2.25rem 2.5rem;
+      box-shadow: var(--shadow);
+    }
+
+    .badge {
+      display: inline-block;
+      font-size: 0.78rem;
+      font-weight: 600;
+      padding: 0.25rem 0.65rem;
+      border-radius: 999px;
+      background: var(--emerald-soft);
+      color: var(--emerald);
+      border: 1px solid var(--emerald-border);
+      margin-bottom: 0.85rem;
+    }
+
+    h1 {
+      margin: 0 0 0.5rem;
+      font-size: 1.85rem;
+      line-height: 1.25;
+      letter-spacing: -0.02em;
+    }
+
+    .meta {
+      color: var(--text-muted);
+      font-size: 0.92rem;
+      margin-bottom: 1.5rem;
+      padding-bottom: 1.25rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    h2 {
+      margin: 1.75rem 0 0.6rem;
+      font-size: 1.2rem;
+      color: var(--text);
+    }
+
+    p {
+      margin: 0 0 0.85rem;
+    }
+
+    ul {
+      margin: 0 0 1rem;
+      padding-left: 1.35rem;
+    }
+
+    li {
+      margin-bottom: 0.4rem;
+    }
+
+    .placeholder {
+      display: inline-block;
+      background-color: var(--amber-soft);
+      color: var(--amber);
+      border: 1px dashed #f59e0b;
+      border-radius: 4px;
+      padding: 0.05em 0.45em;
+      font-weight: 600;
+      font-family: var(--font-mono);
+      font-size: 0.9em;
+    }
+
+    .pl-box {
+      margin-top: 2rem;
+      background: #f8fafc;
+      border: 1px solid var(--primary-border);
+      border-left: 4px solid var(--primary);
+      border-radius: 8px;
+      padding: 1.15rem 1.3rem;
+    }
+
+    .pl-box h3 {
+      margin: 0 0 0.5rem;
+      font-size: 1rem;
+      color: var(--primary);
+    }
+
+    .pl-box p {
+      margin: 0;
+      font-size: 0.93rem;
+    }
+
+    .site-footer {
+      border-top: 1px solid var(--border);
+      background: var(--surface);
+      padding: 1.5rem;
+      font-size: 0.88rem;
+      color: var(--text-muted);
+    }
+
+    .footer-inner {
+      max-width: 920px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    @media (max-width: 640px) {
+      .policy-card {
+        padding: 1.5rem 1.25rem;
+      }
+      h1 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-inner">
+      <a class="brand" href="./index.html">
+        <span class="brand-mark" aria-hidden="true">DF</span>
+        <span>DobbyFetch Documentation</span>
+      </a>
+      <a class="back-link" href="./index.html">&larr; Back to Technical Overview</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <article class="policy-card">
+      <span class="badge">Internal Data Processing &amp; Privacy Policy</span>
+      <h1>Internal Data Processing &amp; Privacy Policy</h1>
+      <div class="meta">
+        <strong>Data Controller:</strong> POL-ENSA Sp. z o. o. &bull;
+        <strong>Contact:</strong> <a href="mailto:marcin.kamo@gmail.com">marcin.kamo@gmail.com</a>
+      </div>
+
+      <h2>1. Scope &amp; Purpose of Processing</h2>
+      <p>
+        This policy describes how <strong>DobbyFetch</strong> &mdash; a private, internal Business Intelligence (BI) and Data Warehouse (DWH) platform operated exclusively by POL-ENSA Sp. z o. o. &mdash; collects, stores, and protects data retrieved from the organization's own e-commerce channels (including Allegro, Shopify), advertising platforms (including Google Ads, Meta, GA4), customer support tools (Responso), and internal ERP/WMS systems (Subiekt GT, Feniks WMS).
+      </p>
+      <p>
+        DobbyFetch is used strictly by authorized internal employees (~10 users) for:
+      </p>
+      <ul>
+        <li>Internal sales, revenue, and fulfillment analytics;</li>
+        <li>Inventory level monitoring and restocking optimization;</li>
+        <li>Commission, advertising spend, and net profitability (COGS/margin) reconciliation;</li>
+        <li>Customer support SLA and operational performance reporting.</li>
+      </ul>
+
+      <h2>2. Legal Basis (GDPR / RODO)</h2>
+      <p>
+        Where operational datasets contain personal data (such as order identifiers or customer support metadata associated with transactions conducted with POL-ENSA Sp. z o. o.), processing is performed by POL-ENSA Sp. z o. o. as the Data Controller under:
+      </p>
+      <ul>
+        <li><strong>Article 6(1)(f) GDPR:</strong> Legitimate interest of the merchant organization in internal business analytics, inventory management, fraud/anomaly detection, and operational efficiency;</li>
+        <li><strong>Article 6(1)(c) GDPR:</strong> Compliance with statutory accounting, tax, and financial reporting obligations.</li>
+      </ul>
+
+      <h2>3. Data Minimization &amp; Categories of Data</h2>
+      <p>
+        DobbyFetch ingests only the operational records required for internal reporting via read-only API endpoints (e.g., Allegro <code>/order/events</code>, <code>/order/checkout-forms</code>, <code>/billing/billing-entries</code>, <code>/sale/offers</code>). Analytical reporting views (<code>analytics_generic</code> and <code>analytics_restricted</code>) aggregate transactional metrics (SKUs, quantities, values, fees, fulfillment states) and minimize exposure of personal data in day-to-day dashboards and queries.
+      </p>
+
+      <h2>4. Strict Prohibition on Data Sharing &amp; Commercialization</h2>
+      <ul>
+        <li><strong>No Third-Party Sharing or Resale:</strong> Data processed in DobbyFetch is never sold, rented, licensed, or disclosed to external third parties or other merchants.</li>
+        <li><strong>No Public Access:</strong> DobbyFetch is not a multi-tenant SaaS application and cannot be accessed by external users.</li>
+        <li><strong>Controlled AI Interface:</strong> Internal employee AI assistants querying the warehouse via the custom MCP server operate strictly under read-only SQL AST guardrails, per-user table/column RBAC, and mandatory business-intent audit logging.</li>
+      </ul>
+
+      <h2>5. Technical &amp; Organizational Security Measures</h2>
+      <ul>
+        <li><strong>On-Premise Hosting &amp; Network Isolation:</strong> All data is stored on self-hosted PostgreSQL 16 infrastructure accessible exclusively within the organization's private LAN/VPN.</li>
+        <li><strong>Least-Privilege Access Control:</strong> Distinct database roles separate ingestion, transformation, standard employee analytics (excluding cost/margin data), and managerial financial reporting.</li>
+        <li><strong>Authentication &amp; Granular RBAC:</strong> Individual employee accounts protected with salted <code>bcrypt</code>/<code>argon2</code> password hashes and granular table/column permissions.</li>
+        <li><strong>OAuth Token Governance:</strong> API credentials (such as Allegro OAuth 2.0 Device Flow tokens) are stored in an isolated governance schema inaccessible to end users and refreshed automatically.</li>
+        <li><strong>Immutable Audit Trail:</strong> All analytical queries and ETL connector executions are logged for internal compliance review.</li>
+      </ul>
+
+      <h2>6. Data Retention &amp; Deletion</h2>
+      <p>
+        Operational and financial analytical data is retained within the internal warehouse for as long as required for historical business reporting and statutory accounting/tax retention periods. System and query audit logs are automatically pruned by a scheduled daily cleanup job (default retention: <strong>5 years / 1,825 days</strong> or <strong>30 GB</strong> maximum size). Upon termination of any API integration, associated OAuth tokens are immediately revoked and removed.
+      </p>
+
+      <h2>7. Contact &amp; Data Protection Inquiries</h2>
+      <p>
+        Questions regarding this policy, API data handling, or data subject rights under GDPR / RODO may be directed to the system administrator at <a href="mailto:marcin.kamo@gmail.com">marcin.kamo@gmail.com</a>.
+      </p>
+
+      <div class="pl-box" lang="pl">
+        <h3>Streszczenie Polityki Prywatności (PL)</h3>
+        <p>
+          Administratorem danych przetwarzanych w systemie <strong>DobbyFetch</strong> jest POL-ENSA Sp. z o. o.. System stanowi prywatną, wewnętrzną hurtownię danych utrzymywaną na infrastrukturze własnej (on-premise) w sieci LAN/VPN, bez dostępu publicznego. Dane pobierane w trybie wyłącznie do odczytu z API (w tym Allegro REST API) są przetwarzane wyłącznie na potrzeby wewnętrznej analityki sprzedaży, zarządzania zapasami, raportowania rentowności oraz rozliczeń księgowych (art. 6 ust. 1 lit. c oraz f RODO). Dane nie są sprzedawane ani udostępniane podmiotom trzecim. Dostęp mają wyłącznie upoważnieni pracownicy (ok. 10 osób) z wykorzystaniem indywidualnych kont, kontroli uprawnień RBAC oraz rejestru audytowego zapytań. Kontakt z administratorem: <a href="mailto:marcin.kamo@gmail.com">marcin.kamo@gmail.com</a>.
+        </p>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>&copy; POL-ENSA Sp. z o. o. &mdash; DobbyFetch Internal BI &amp; DWH Platform.</div>
+      <div><a href="./index.html">Technical Documentation</a></div>
+    </div>
+  </footer>
+</body>
+</html>
